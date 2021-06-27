@@ -1,0 +1,65 @@
+:root {
+  --MainBlue: #38b6ff;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+  color: white;
+  font-size: 4.5rem;
+
+}
+
+.mainButton {
+  background-color: white;
+  border: 0px;
+  color: var(--MainBlue);
+  font-size: 1.5rem;
+  padding: 10px 15px;
+
+}
+
+.mainButton:hover {
+  background-color: var(--MainBlue);
+  color: white;
+}
+
+
+/* Header */
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#navbarSupportedContent {
+  flex-grow: 0;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+#mainPicture {
+  height: calc(100vh - 160px);
+  background-image: url("../media/home.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+
+
+#mainPicture > div {
+  height: 100%;
+
+}
