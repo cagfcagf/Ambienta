@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-193584137-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-193584137-1');
+  gtag('config', 'AW-511422874');
+</script>
+
     <meta charset="utf-8">
     <title>Ambienta Exteriores</title>
+    <meta name="description" content="Construimos la piscina que sueñas, con un equipo de confianza. Construimos piscinas, realizamos revestimientos y remodelaciones.">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/master.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property=”og:title” content="Ambienta Exteriores" />
+    <meta property=”og:description” content="Construye tu piscina con un equipo de confianza." />
+    <meta property=”og:site_name” content="Ambienta exteriores" />
+    <meta name="keywords"  content="construccion, piscinas, santiago, revestimientos">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="media/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="media/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/manifest.json">
+    <meta name="msapplication-TileColor" content="#38b6ff">
+    <meta name="msapplication-TileImage" content="media/ms-icon-144x144.png">
+    <meta name="theme-color" content="#38b6ff">
 
 
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="">
+      <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-xl">
     <a class="navbar-brand" href="#"><img src="media/logo.svg" alt="logo ambienta" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,24 +58,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <a class="nav-link" href="#sectionValues">¿Por qué elegirnos?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#sectionServices">Nuestros servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sectionCustomers">Clientes felices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sectionGallery">Proyectos realizados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link headerButtom" href="#sectionContact">Cotizar</a>
         </li>
       </ul>
     </div>
@@ -50,7 +84,8 @@
     <section id="mainPicture">
       <div class="container-xl d-flex flex-column align-items-start justify-content-center">
         <h1>Expertos en piscinas<br>y exteriores.</h1>
-        <button type="button" name="button" class="mainButton">Obtén un presupuesto</button>
+        <a href="#sectionContact"><button type="button" name="button" class="mainButton" href="#sectionContact">Obtén un presupuesto</button></a>
+
       </div>
     </section>
     <section id="sectionValues" class="">
@@ -75,28 +110,107 @@
           </div>
         </div>
       </div>
-
-
     </section>
 
     <section id="sectionServices" class="">
       <div class="container-xl">
         <h2>Nuestros servicios</h2>
         <div class="d-flex justify-content-between flex-wrap container-fluid servicesContainer">
-          <div class="col-12 col-xl-4 construccion d-flex justify-content-center align-items-center">
+          <div class="col-12 col-xl-4 construccion d-flex flex-column justify-content-center align-items-center">
             <p>Diseño y construcción de piscinas</p>
+            <h4>Diseñamos y construimos piscinas de alta calidad y te asesoramos en todo momento.</h4>
           </div>
-          <div class="col-12 col-xl-4 remodelacion d-flex justify-content-center align-items-center">
+          <div class="col-12 col-xl-4 remodelacion d-flex flex-column justify-content-center align-items-center">
             <p>Remodelación de piscinas</p>
+            <h4>Arreglamos y modernizamos tu piscina para que puedas disfrutarla como el primer día.</h4>
           </div>
-          <div class="col-12 col-xl-4 revestimiento d-flex justify-content-center align-items-center">
+          <div class="col-12 col-xl-4 revestimiento d-flex flex-column justify-content-center align-items-center">
             <p>Revestimientos</p>
+            <h4>Revestimos tu piscina con Diamond Brite, material de última tecnología con una durabilidad de 15 años. Cuenta diversos colores para todos los gustos.</h4>
           </div>
         </div>
       </div>
-
-
     </section>
+
+    <section id="sectionCustomers" class="">
+      <div class="container-xl">
+        <h2>Clientes felices</h2>
+        <div class="d-flex justify-content-between flex-wrap container-fluid">
+          <div class="col-12 col-xl-4 d-flex flex-column justify-content-center align-items-center customerContainer">
+            <img src="media/air.svg" alt="">
+            <p>“Cuesta encontrar personas tan responsables y entregadas como Jonathan y su equipo. Lo recomiendo a ojos cerrados”</p>
+            <h3>Camila Sepúlveda</h3>
+          </div>
+          <div class="col-12 col-xl-4 d-flex flex-column justify-content-center align-items-center customerContainer">
+            <img src="media/air.svg" alt="">
+            <p>“Me identifiqué con la historia de Jonathan apenas la leí y no me equivoqué. He escuchado a tantos amigos que lo pasan mal construyendo sus proyectos, que siento que tuve mucha suerte con conocerlo”</p>
+            <h3>Carlos Liberona</h3>
+          </div>
+          <div class="col-12 col-xl-4 d-flex flex-column justify-content-center align-items-center customerContainer">
+            <img src="media/air.svg" alt="">
+            <p>“Con esta pandemia, lo que más queríamos era tener un lugar cómodo para descansar y desconectarnos con mi familia. Jonathan lo hizo rápido y a precios muy convenientes.”</p>
+            <h3>Diego Hargous</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionGallery" class="">
+      <div class="container-xl">
+        <h2>Proyectos realizados</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/piscina1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina3.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina4.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina5.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina6.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina7.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina8.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="media/piscina9.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </div>
+    </section>
+
+    <section id="sectionContact" class="">
+      <div class="container-xl">
+        <h2>¡Cotiza con nosotros!</h2>
+        <div class="d-flex justify-content-between flex-wrap container-fluid">
+<!-- form.123formbuilder.com script begins here -->
+<iframe allowTransparency="true"  width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="https://form.123formbuilder.com/my-contact-form-5941746.html"><p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p></iframe>
+<!-- form.123formbuilder.com script ends here -->
+ </div>
+      </div>
+    </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

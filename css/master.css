@@ -66,17 +66,17 @@ body {
 
 }
 
-#sectionValues {
+#sectionValues, #sectionCustomers {
   background-color: var(--MainGray);
 }
 
-#sectionValues > div, #sectionServices > div {
+#sectionValues > div, #sectionServices > div, #sectionCustomers > div, #sectionContact > div, #sectionGallery > div {
   padding-top: 70px;
   padding-bottom: 70px;
 
 }
 
-#sectionValues h2,  #sectionServices h2 {
+#sectionValues h2,  #sectionServices h2, #sectionCustomers h2, #sectionContact h2, #sectionGallery h2{
   font-size: 40px;
   color: black;
   text-align: center;
@@ -85,7 +85,7 @@ body {
 
 }
 
-#sectionValues h3 {
+#sectionValues h3, #sectionCustomers h3  {
   text-align: center;
   color: var(--MainBlue);
   font-size: 22px;
@@ -93,11 +93,21 @@ body {
   margin: 0;
 }
 
-#sectionValues p {
+#sectionValues p, #sectionCustomers p  {
   text-align: center;
   color: var(--SecondaryGrey);
     font-size: 15px;
     margin: 0;
+}
+
+#sectionServices h4{
+  text-align: center;
+  color: floralwhite;
+    font-size: 15px;
+    margin-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-style: italic;
 }
 
 .valuesContainer {
@@ -151,6 +161,47 @@ body {
 
 }
 
+.customerContainer {
+  padding: 0 5rem;
+}
+
+.customerContainer img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.customerContainer p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem!important;
+}
+
+
+
+#sectionContact iframe {
+  height: 850px;
+
+}
+
+#sectionContact h2 {
+  margin-bottom: 0;
+  color: white;
+}
+
+#sectionContact {
+  background-color: var(--MainBlue);
+}
+
+.headerButtom {
+  color: var(--MainBlue)!important;
+  font-weight: 700;
+}
+
+@media all and (max-width: 1200px) {
+  .customerContainer {
+    margin-bottom: 2.5rem;
+  }
+}
+
 @media all and (max-width: 728px) {
 
   .mainButton {
@@ -165,13 +216,13 @@ body {
 
 
 
-  #sectionValues > div, #sectionServices > div {
+  #sectionValues > div, #sectionServices > div, #sectionCustomers > div, #sectionContact > div, #sectionGallery > div {
     padding-top: 50px;
     padding-bottom: 50px;
 
   }
 
-  #sectionValues h2, #sectionServices h2 {
+  #sectionValues h2, #sectionServices h2, #sectionCustomers h2, #sectionContact h2, #sectionGallery h2 {
     font-size: 35px;
     margin-bottom: 50px;
     font-weight: 700;
@@ -191,5 +242,32 @@ body {
     height: 350px;
   }
 
+  .customerContainer {
+    padding: 0 2.5rem;
+  }
 
+  .logo {
+    max-width: 150px;
+  }
+
+  #mainPicture {
+    height: calc(100vh - 100px);
+}
+
+#sectionContact iframe {
+  height: 850px;
+}
+
+#sectionContact h2 {
+  margin-bottom: 0;
+}
+
+
+
+}
+
+@media all and (max-width: 640px) {
+  #sectionContact iframe {
+    height: 1250px;
+  }
 }
