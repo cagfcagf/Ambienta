@@ -1,5 +1,7 @@
 :root {
   --MainBlue: #38b6ff;
+  --MainGray: rgb(247, 245, 245);
+  --SecondaryGrey: #BABABA;
 
 }
 
@@ -17,12 +19,12 @@ h1 {
   color: var(--MainBlue);
   font-size: 1.5rem;
   padding: 10px 15px;
-
 }
 
 .mainButton:hover {
   background-color: var(--MainBlue);
   color: white;
+
 }
 
 
@@ -61,5 +63,87 @@ body {
 
 #mainPicture > div {
   height: 100%;
+
+}
+
+#sectionValues {
+  background-color: var(--MainGray);
+}
+
+#sectionValues > div {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+
+#sectionValues h2 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 700;
+
+}
+
+#sectionValues h3 {
+  text-align: center;
+  color: var(--MainBlue);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#sectionValues p {
+  text-align: center;
+  color: var(--SecondaryGrey);
+    font-size: 15px;
+    margin: 0;
+}
+
+.valuesContainer {
+  padding: 10px 25px;
+  height: 120px;
+}
+
+@media all and (max-width: 728px) {
+
+  .mainButton {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+
+  }
+
+  #mainPicture {
+
+    height: 500px;
+
+  }
+
+  #sectionValues > div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+  #sectionValues h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: 700;
+
+  }
+
+  #sectionValues h3 {
+    font-size: 20px;
+  }
+
+  .valuesContainer {
+    padding: 8px 20px;
+    height: 100px;
+  }
+
 
 }
