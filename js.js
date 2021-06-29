@@ -1,4 +1,4 @@
-<script>
+
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
@@ -12,8 +12,6 @@ function gtag_report_conversion(url) {
   return false;
 }
 
-
-</script>
 
 
 alert("hola");
